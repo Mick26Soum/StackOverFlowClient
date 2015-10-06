@@ -33,7 +33,7 @@
 #pragma mark -- imageDownloader
 - (void)imageDownloader {
   dispatch_group_t group = dispatch_group_create();
-  dispatch_queue_t imageQueue = dispatch_queue_create("com.codefellows.stackoverflow",DISPATCH_QUEUE_CONCURRENT );
+  dispatch_queue_t imageQueue = dispatch_queue_create("com.MC.StackOverflow",DISPATCH_QUEUE_CONCURRENT);
   
   for (Question *question in self.questions) {
     dispatch_group_async(group, imageQueue, ^{
